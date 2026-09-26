@@ -17,16 +17,40 @@
         <section class="card overview">
           <h2>Market Snapshot</h2>
           <p id="statusText">Loading market status...</p>
+          <div id="marketGrid" class="market-grid"></div>
         </section>
 
         <section class="card watchlist">
           <h2>Watchlist</h2>
-          <ul>
-            <li>AAPL</li>
-            <li>MSFT</li>
-            <li>NVDA</li>
-            <li>AMZN</li>
-          </ul>
+          <table class="watchlist-table">
+            <thead>
+              <tr>
+                <th>Symbol</th>
+                <th>Price</th>
+                <th>Change</th>
+                <th>%</th>
+              </tr>
+            </thead>
+            <tbody id="watchlistTableBody"></tbody>
+          </table>
+        </section>
+
+        <section class="card portfolio">
+          <h2>Portfolio Summary</h2>
+          <div class="portfolio-stats">
+            <div>
+              <span class="label">Total Value</span>
+              <strong>$48,240.00</strong>
+            </div>
+            <div>
+              <span class="label">Day Change</span>
+              <strong class="positive">+$1,280.50</strong>
+            </div>
+            <div>
+              <span class="label">Risk Score</span>
+              <strong>Moderate</strong>
+            </div>
+          </div>
         </section>
       </main>
     </div>

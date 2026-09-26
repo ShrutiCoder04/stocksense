@@ -41,8 +41,67 @@ button {
   cursor: pointer;
 }
 
-ul {
-  margin: 0;
-  padding-left: 1.2rem;
-  line-height: 2;
+.market-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.stock-tile {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 0.9rem;
+}
+
+.stock-tile h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.stock-tile .price {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.stock-tile .positive {
+  color: #4ade80;
+}
+
+.stock-tile .negative {
+  color: #f87171;
+}
+
+.watchlist-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.watchlist-table th,
+.watchlist-table td {
+  text-align: left;
+  padding: 0.65rem 0.4rem;
+  border-bottom: 1px solid #1f2937;
+}
+
+.portfolio-stats {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.label {
+  display: block;
+  color: #94a3b8;
+  margin-bottom: 0.3rem;
+}
+
+.positive {
+  color: #4ade80;
+}
+
+.negative {
+  color: #f87171;
 }
