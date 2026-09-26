@@ -1,0 +1,22 @@
+{
+  "name": "stocksense-frontend",
+  "version": "0.1.0",
+  "description": "Frontend dashboard for StockSense - Stock market analysis and prediction platform",
+  "private": true,
+  "scripts": {
+    "dev": "http-server . -p 5500 -c-1",
+    "serve": "http-server . -p 3000"
+  },
+  "keywords": [
+    "stocks",
+    "market",
+    "analysis",
+    "prediction",
+    "trading"
+  ],
+  "author": "StockSense Contributors",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
